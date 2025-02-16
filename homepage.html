@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Ghorpade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="circle"></div> <!-- Custom Cursor -->
+    <div class="container">
+        <h1>PRANAV GHORPADE</h1>
+        <hr>
+        <nav>
+            <a href="#" class="active" id="home-link" style="color: yellow">HOME</a>
+            <a href="#" id="research-link">RESEARCH</a>
+            <a href="#" id="internship-link">INTERNSHIPS</a>
+        </nav>
+        <!--<p>Logic: <a href="#">The Laws of Truth</a> &nbsp; | &nbsp; <a href="#">Vagueness and Degrees of Truth</a></p> -->
+        <div class="content" id ="home-content" style="display: block;">
+            <br><br>
+            <div class="bio-photo-container">
+            <div class="bio">
+                <p>
+                    I am a PhD student in computer science at the University of Sydney supervised 
+                    by <a href="https://sasharubin.github.io">Sasha Rubin</a> and 
+                    <a href="https://people.rennes.inria.fr/Nathalie.Bertrand/">Nathalie Bertrand</a>.
+                </p>
+                <p>
+                    I started my PhD in oct 2024. Before that, I was a undergraduate student at the 
+                    <a href="https://www.cmi.ac.in">Chennai Mathematical Institute</a> where I was awarded BSc(Hons) in 2023.
+                    
+                </p>
+                <div class="tooltip" id="tooltip"></div>
+                <p>I enjoy exploring diverse cultures. So far, I have traveled to: 
+                    <img src="https://flagcdn.com/w320/in.png" width="14" height="11" alt="India flag" title="India">
+                    <img src="https://flagcdn.com/w320/au.png" width="14" height="11" alt="Australia flag" title="Australia">
+                    <img src="https://flagcdn.com/w320/vn.png" width="14" height="11" alt="Vietnam flag" title="Vietnam">
+                    <img src="https://flagcdn.com/w320/fr.png" width="14" height="11" alt="France flag" title="France">
+                    <img src="https://flagcdn.com/w320/cz.png" width="14" height="11" alt="Czech Republic flag" title="Czech Republic">
+                    <img src="https://flagcdn.com/w320/es.png" width="14" height="11" alt="Spain flag" title="Spain">
+                    <img src="https://flagcdn.com/w320/at.png" width="14" height="11" alt="Austria flag" title="Austria">
+                    <img src="https://flagcdn.com/w320/lu.png" width="14" height="11" alt="Luxembourg flag" title="Luxembourg">
+                    <img src="https://flagcdn.com/w320/it.png" width="14" height="11" alt="Italy flag" title="Italy">.
+                </p>
+                <!--<p>I also enjoy playing and watching European football.</p> -->
+                <!--<p>Links to my music and photography websites are <a href="#">here</a>.</p>-->
+                <h3>Contact</h3>
+                <p><strong>Address:</strong> W413 Building J12, The University of Sydney, NSW 2008 Australia</p>
+                <!-- <p><strong>Tel:</strong> +61 2 9036 6242</p>-->
+                <p><strong>Email:</strong> <a href="mailto:pranav.ghorpade@sydney.edu.au">pranav.ghorpade@sydney.edu.au</a></p>
+            </div>
+            <div class="photo">
+                <img src="profile.jpg" alt="Pranav Ghorpade">
+            </div>
+        </div>
+        </div>
+        <div class="content" id="research-content" style="display: none;">
+            <br><br>
+            <p> My broad research interest lies in formal methods for distributed systems.</p>
+            <div class="content-container">
+                <!-- Papers Section -->
+                <div class="section">
+                    <h4>Papers</h4>
+                    <hr>
+                    
+                    <p><span style="color: #FFC5C5;">Reusable Formal Verification of DAG-based Consensus Protocols</span></p>
+                    <p><span style="color: #3f8d75;">NASA Formal Methods (NFM)</span>, forthcoming 2025.</p>
+                    <p><a href="https://github.com/pranavg5526/Reusable-Formal-Verification-of-DAG-based-Consensus" >GitHub</a> 
+                        <a href="NFM.pdf" >PDF</a></p>
+        
+                    <hr>
+        
+                    <p><span style="color: #FFC5C5;">A Game of Pawns</span></p>
+                    <p> <span style="color: #3f8d75;">International Conference on Concurrency Theory (CONCUR)</span></p>
+                    <p>LIPIcs, Volume 279, CONCUR 2023, pp. 16:1-16:17</p> 
+                    <p>Also accepted for journal publication at <span style="color: #3f8d75;">Logical Methods in Computer Science (LMCS)</span>, forthcoming 2025.</p>
+                    <p> <a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol279-concur2023/LIPIcs.CONCUR.2023.16/LIPIcs.CONCUR.2023.16.pdf" >PDF</a></p>
+                </div>
+        
+                <!-- Vertical Divider -->
+                <div class="divider"></div>
+        
+                <!-- Extended Abstracts Section -->
+                <div class="section">
+                    <h4>Extended Abstracts</h4>
+                    <hr>
+                    
+                    <p><span style="color: #FFC5C5;">Towards Formal Verification of DAG-based Consensus</span></p>
+                    <p><span style="color: #3f8d75;">Formal Methods for Blockchain Consensus (FMBC)</span>, 2024.</p>
+                    <p><a href="FMBC(extended-abstract).pdf" >PDF</a></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="internships-content" style="display: none;">
+            <br><br>
+                
+            <div class="container1">
+                <!-- First Internship Section -->
+                <p style="color: #FFC5C5;">Research Internship in Formal Verification of Blockchain Protocols</p>
+                <p><span style="color: #3f8d75;">University of Sydney</span> | Oct 2023 - Oct 2024</p>
+                        
+                <p>Worked with <span><a href="https://sasharubin.github.io">Sasha Rubin</a>, <a href="https://people.rennes.inria.fr/Nathalie.Bertrand/">Nathalie Bertrand</a>, <a href="https://b-scholz.github.io/">Bernhard Scholz</a>, and <a href="https://psubotic.github.io/">Pavle Subotic</a></span>.</p>
+                <p>Funded by <a href="https://www.soniclabs.com/">Sonic Labs</a>.</p>
+                <hr>
+                
+                <!-- Second Internship Section -->
+                        
+                <p style="color: #FFC5C5;">Research Internship in Timed Systems</p>
+                <p><span style="color: #3f8d75;">INRIA Rennes</span> | May 2023 - July 2023</p>
+                
+                <p>Worked with <span><a href="https://people.rennes.inria.fr/Nathalie.Bertrand/">Nathalie Bertrand</a> and <a href="https://people.irisa.fr/Ocan.Sankur/">Ocan Sankur</a></span>.</p>
+                <p>Funded by <a href="https://relax.lmf.cnrs.fr/">ReLaX Labs</a>.</p>
+                        
+                
+                <!-- Third Internship Section -->
+                <hr>
+                <p style="color: #FFC5C5;">Research Internship in Reactive Synthesis</p>
+                <p><span style="color: #3f8d75;">TIFR Mumbai & University of Haifa</span> | May 2022 - Sept 2022</p>
+                        
+                
+                <p>Worked with <a href="https://www.tifr.res.in/~shibashis.guha/">Shibashis Guha</a> and <a href="https://sites.google.com/view/gavni">Guy Avni</a>.</p>
+                        
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>This website is inspired by <a href="https://www.njjsmith.com/philosophy/">NJJSmith's Website</a>.</p>
+  </footer>
+</html>
+
+
+<!--style="color: #F8E231;"-->
