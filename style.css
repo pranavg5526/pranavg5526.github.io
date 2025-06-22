@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    cursor: none; /* Hide default cursor */
+    /*cursor: none; /* Hide default cursor */
 }
 
 body {
@@ -94,17 +94,32 @@ a:hover {
     border-radius: 5px;
 }
 
-/* Cursor Effect */
+/* Default Custom Cursor */
 .circle {
     --circle-size: 40px;
     position: fixed;
     height: var(--circle-size);
     width: var(--circle-size);
-    border: 1px solid white;
-    border-radius: 100%;
-    top: calc(var(--circle-size) / 2 * -1);
-    left: calc(var(--circle-size) / 2 * -1);
+    border: 2px solid rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 
+                0 0 20px rgba(0, 255, 255, 0.4);
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
     pointer-events: none;
+    transition: transform 0.1s ease-out, background 0.3s;
+}
+
+/* Change Cursor When Hovering Over Links */
+nav a:hover ~ .circle {
+    background: yellow;
+    border-color: yellow;
+}
+
+/* Change Cursor When Hovering Over Content Sections */
+.content:hover ~ .circle {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: white;
 }
 
 .content-container {
@@ -139,4 +154,74 @@ a:hover {
         font-size: 12px;
         display: none;
         pointer-events: none;
+}
+
+.trail {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5;
+    transition: transform 0.1s, opacity 0.3s;
+}
+
+.news-section {
+  /* make the whole block left-aligned */
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  background: #050908;
+  border-radius: 5px;
+}
+
+.contact {
+  /* make the whole block left-aligned */
+  text-align: left;
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  background: #050908;
+  border-radius: 5px;
+}
+
+
+.news-section {
+  text-align: left;
+  margin: 30px auto;
+  padding: 15px;
+  background:#050908;
+  border-radius: 5px;
+}
+
+.news-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #F8E231;
+}
+
+.news-list {
+  list-style: disc inside;
+  margin: 0 0 10px;
+  padding-left: 1em;
+}
+
+/* Make summary line look like a list item */
+.more-news summary {
+  display: list-item;       /* gives you a bullet */
+  list-style-position: inside;
+  margin: 5px 0;            /* same vertical spacing as your lis */
+  padding-left: 1.2em;      /* same indent as your list items */
+}
+
+/* And ensure the extra items keep the same indent */
+.more-news .extra {
+  margin-left: 1.2em;       /* match the padding-left above */
+}
+
+.more-news[open] .extra {
+  opacity: 1;
+  transform: translateY(0);
 }
