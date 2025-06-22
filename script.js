@@ -1,7 +1,7 @@
 console.clear();
 
 // Select the circle element
-const circleElement = document.querySelector('.circle');
+/* const circleElement = document.querySelector('.circle');
 
 // Create objects to track mouse position and custom cursor position
 const mouse = { x: 0, y: 0 };
@@ -43,7 +43,8 @@ const tick = () => {
   window.requestAnimationFrame(tick);
 }
 
-tick();
+tick(); */
+
 
 // Add event listener to research link
 const researchLink = document.getElementById('research-link');
@@ -137,3 +138,10 @@ internshipsLink.addEventListener('click', (e) => {
         });
     });
 
+
+document.querySelectorAll('.more-news').forEach(details => {
+  const summary = details.querySelector('summary');
+  details.addEventListener('toggle', () => {
+    summary.textContent = details.open ? 'Less News' : 'More News';
+  });
+});
