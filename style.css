@@ -180,7 +180,7 @@ nav a:hover ~ .circle {
   width: 100%;
   margin: 30px auto;
   padding: 20px;
-  background: #f8f9fa; /* Very light gray to stand out from white background */
+  background: #000000; /* Very light gray to stand out from white background */
   border-radius: 5px;
 }
 
