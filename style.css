@@ -12,9 +12,9 @@ html {
 
 body {
     min-height: 100vh;
-    /* 2. CHANGE BACKGROUND TO WHITE, TEXT TO DARK GRAY */
-    background-color: #ffffff;
-    color: #333333;
+    /* 2. CHANGE BACKGROUND TO BLACK, TEXT TO WHITE */
+    background-color: #000000;
+    color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 20px;
